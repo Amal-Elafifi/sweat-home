@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- taiwlind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome back-img center-flex-col bg-[url(./img/welcome-back.jpg)]  text-white">
+        <h1 class="h1">Welcome To Sweat Home</h1>
+        <div class="buttons">
+            <button class="btn signUp mr-[40px]"> Sign Up</button>
+            <button class="btn signIn">Sign In</button>
+        </div>
+    </div>
+    <div class="signUpForm back-img center-flex-col bg-[url(./img/signup-back.jpg)] pb-[30px]">
+        <h1 class="h1 mb-[10px] mt-[10px]">Sign Up Now</h1>
+        <form class=" signupForm center-flex-col max-w-[600px] w-full text-white" action="">
+            <label class="label" for="">Name</label>
+            <input class="input signUpName" type="text" required="required" placeholder="Enter your name">
+            <label class="label" for="email">Email</label>
+            <input class="input signUpEmail"  type="email" name="" id="signUpEmail" required="required" placeholder="Enter your Email">
+            <p class="emailMsg"></p>
+            <label class="label" for="password">Password</label>
+            <input class="input signUpPass"  type="password" name="" id="signUpPassword" required="required" placeholder="Enter your password">
+            <p class="passMsg"></p>
+            <label class="label" for="gender">Gender</label>
+            <select class="text-black outline-0 rounded-[20px]" name="gender" id="gender">
+                <option class="opt" value="male">Male</option>
+                <option class="opt" value="female">Female</option>
+            </select>
+            <input class="submit signup" style="width: 200px; padding: 8px 20px;" type="submit" value="register">
+        </form>
+    </div>
+    <div class="signInForm back-img center-flex-col bg-[url(./img/signin-back.jpg)]">
+        <h1 class="h1 mt-[10px]">Sign In</h1>
+        <form class="center-flex-col max-w-[600px] w-full text-white" action="">
+            <label class="label" for="email">Email</label>
+            <input class="input signInEmail"  type="email" name="signinEmail" id="signInEmail" required placeholder="Enter your Email">
+            <p class="emailMsg"></p>
+            <label class="label" for="password">Password</label>
+            <input class="input signInPass"  type="password" name="" id="signInPassword" required placeholder="Enter your password">
+            <p class="passMsg"></p>
+            <input class="submit signin" style="width: 200px; padding: 8px 20px;" type="submit" value="Sign in">
+        </form>
+    </div>
+    <div class="profile back-img center-flex-col bg-[url(./img/profile-back.jpg)]">
+        <div class="userInfo flex justify-center  items-center text-white">
+            <div class="img-holder w-[200px] h-[200px] p-3 bg-[#D8C6A5] mr-[40px]  hover:bg-black cursor-pointer">
+                <img class=" max-w-full" src="img/user/5.jpg" alt="user" srcset="">
+                <h2 class="name capitalize text-[50px] font-bold ml-[40px] mt-5 hover:text-black cursor-pointer"></h2>
+            </div>
+            <div class="text center-flex-col">
+                <h2 class="text-[50px] font-bold">Welcom To Sweat Home</h2>
+                <h3 class="text-[30px] font-bold text-center mt-3">Let's take a tour </h3>
+                <button class="logout submit">Log Out</button>
+            </div>
+           
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
