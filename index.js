@@ -84,7 +84,7 @@ function storeUserInfo (e) {
     const regex = /^(?=.*[A-Z])(?=.*[@$!%*?&])(?=.*\d).+$/;
 
     if(signupPass.value !== "" && !regex.test(signupPass.value)) {
-        signupPassMsg.innerHTML = "Password must have at least one capital letter, one special character and one digit"
+        signupPassMsg.innerHTML = "Password must have at least one capital letter, one special character(@$!%*?&) and one digit"
     return;
     }
 
